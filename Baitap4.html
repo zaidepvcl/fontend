@@ -4,20 +4,77 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .block
+        body
         {
+            width: 1000px;
+        }
+        header
+        {
+            width: 1000px;
+            background-color: forestgreen;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        main
+        {
+            width: 1000px;
             display: flex;
+        }
+        .category
+        {
+            width: 300px;
+            background-color: whitesmoke;
+            border: 1px solid lightgray;
+            margin: 10px;
+        }
+        .blog
+        {
+            margin: 10px;
+            width: 700px;
+        }
+        footer
+        {
+            padding: 3px;
+            width: 1000px;
+            background-color: black;
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-<div class="block">
-<img src="img/imgBaitap4png.png" alt="pic" width="300" height="200">
-    <div>
-        <h2>Đèn Âm Hồn: Phim tôn vinh văn hóa Việt lại đi đạo nhái hàng loạt bom tấn nước ngoài</h2>
-        <p> <b>Cine- </b>20 Giờ trước</p>
-        <p>Tác phẩm của đạo diễn Hoàng Nam "học lỏm nhiều phimm kinh dị nổi tiếng nhưng chất lượng kém xa.</p>
+<header>
+    <h1 style="margin: 5px">My Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+<main id="about">
+    <div class="category">
+        <h3>Chuyên mục</h3>
+        <nav>
+            <ul>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+        </nav>
     </div>
-</div>
+    <div class="blog">
+        <h3>Bài viết 1</h3>
+        <img src="img/imgBaitap6_1.png" alt="pic1">
+        <p>Đây là nội dung tóm tắc của bài viết 1</p>
+        <hr>
+        <h3>Bài viết 2</h3>
+        <img src="img/imgBaitap6_2.png" alt="pic2">
+        <p>Đây là nội dung tóm tác của bài viết 2</p>
+    </div>
+</main>
+<footer id="contact">
+    <p>Liên hệ: email@example.com</p>
+</footer>
 </body>
 </html>
